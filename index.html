@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ocean Tshimbalanga | Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+  <svg class="svg-filters" aria-hidden="true">
+  <filter id="water-ripple">
+    <feTurbulence
+      type="fractalNoise"
+      baseFrequency="0.007 0.012"
+      numOctaves="1"
+      seed="3"
+      result="turbulence"
+    >
+      <animate
+        attributeName="baseFrequency"
+        dur="14s"
+        values="0.007 0.012; 0.009 0.014; 0.007 0.012"
+        repeatCount="indefinite"
+      />
+    </feTurbulence>
+
+    <feDisplacementMap
+      in="SourceGraphic"
+      in2="turbulence"
+      scale="3"
+      xChannelSelector="R"
+      yChannelSelector="G"
+    />
+  </filter>
+</svg>
+  <header class="site-header">
+    <a href="#home" class="logo">Ocean</a>
+
+    <nav class="site-nav">
+      <a href="#about">01. About</a>
+      <a href="#projects">02. Projects</a>
+      <a href="#contact">03. Contact</a>
+      <a href="resume.pdf" class="resume-link">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Hi, my name is</p>
+        <h1>Ocean Tshimbalanga.</h1>
+        <h2>I build things beneath the surface.</h2>
+
+        <p>
+          I’m a Computer Science student exploring software engineering,
+          backend development, QA, and practical tools that solve real problems.
+        </p>
+
+        <a href="#about" class="cta-button">Dive In</a>
+      </div>
+    </section>
+    <div class="underwater-wrapper">
+
+    <section id="about" class="section about-section">
+  <h2><span>01.</span> About Me</h2>
+
+  <div class="about-grid">
+    <div>
+      <p>
+        I’m a Computer Science student focused on building useful, reliable software.
+        I’m interested in backend development, software testing, data structures,
+        and systems that solve real problems.
+      </p>
+
+      <p>
+        I like understanding what happens beneath the surface — how programs work,
+        how data moves, and how small pieces connect into larger systems.
+      </p>
+
+      <ul class="skills-list">
+        <li>Java</li>
+        <li>Python</li>
+        <li>React</li>
+        <li>SQL</li>
+        <li>Git</li>
+        <li>Testing</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <h3>Education</h3>
+      <p>Associate of Science in Computer Science</p>
+      <p>B.S. Computer Science — in progress</p>
+
+      <a href="resume.pdf" class="cta-button">View Resume</a>
+    </div>
+  </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+  <h2><span>02.</span> Projects</h2>
+
+  <article class="featured-project">
+    <div class="project-image">
+      Project Screenshot
+    </div>
+
+    <div class="project-info">
+      <p class="eyebrow">Featured Project</p>
+      <h3>Junie Assistant</h3>
+      <p>
+        A local personal assistant designed for scheduling, notes,
+        automation, and private knowledge retrieval.
+      </p>
+
+      <ul class="project-tech">
+        <li>Python</li>
+        <li>SQLite</li>
+        <li>Automation</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="#">GitHub</a>
+        <a href="#">Live Demo</a>
+      </div>
+    </div>
+  </article>
+
+  <div class="project-grid">
+    <article class="project-card">
+      <h3>Medical Practice Website</h3>
+      <p>
+        Appointment booking and admin tools for a small medical practice.
+      </p>
+      <ul class="project-tech">
+        <li>Django</li>
+        <li>SQL</li>
+        <li>HTML/CSS</li>
+      </ul>
+    </article>
+
+    <article class="project-card">
+      <h3>Job Application Tracker</h3>
+      <p>
+        A CRUD app for tracking internship and job applications.
+      </p>
+      <ul class="project-tech">
+        <li>React</li>
+        <li>JavaScript</li>
+        <li>Local Storage</li>
+      </ul>
+    </article>
+  </div>
+</section>
+</div>
+
+    <section id="contact" class="section contact-section">
+  <p class="eyebrow">03. What’s next?</p>
+  <h2>Get In Touch</h2>
+  <p>
+    I’m currently open to internship, junior developer, and QA opportunities.
+  </p>
+
+  <a href="mailto:your-email@example.com" class="cta-button">Say Hello</a>
+  <div class="bubble bubble-one"></div>
+<div class="bubble bubble-two"></div>
+<div class="bubble bubble-three"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Designed & built by Ocean Tshimbalanga</p>
+  </footer>
+
+  <script src="script.js"></script>
+    </body>
+</html>
